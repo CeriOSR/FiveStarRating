@@ -15,6 +15,9 @@
 		E0525E45215F34AA0053CA15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0525E43215F34AA0053CA15 /* LaunchScreen.storyboard */; };
 		E0525E50215F34AA0053CA15 /* FiveStarRatingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0525E4F215F34AA0053CA15 /* FiveStarRatingTests.swift */; };
 		E0525E5B215F34AA0053CA15 /* FiveStarRatingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0525E5A215F34AA0053CA15 /* FiveStarRatingUITests.swift */; };
+		E0525E6B215F357C0053CA15 /* FiveStarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0525E6A215F357C0053CA15 /* FiveStarRating.swift */; };
+		E0525E6C215F357C0053CA15 /* FiveStarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0525E6A215F357C0053CA15 /* FiveStarRating.swift */; };
+		E0525E6D215F357C0053CA15 /* FiveStarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0525E6A215F357C0053CA15 /* FiveStarRating.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,7 @@
 /* Begin PBXFileReference section */
 		E0525E34215F34A90053CA15 /* FiveStarRating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiveStarRating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0525E37215F34A90053CA15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0525E39215F34A90053CA15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0525E39215F34A90053CA15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ViewController.swift; sourceTree = "<group>"; };
 		E0525E3C215F34A90053CA15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0525E3F215F34A90053CA15 /* FiveStarRating.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FiveStarRating.xcdatamodel; sourceTree = "<group>"; };
 		E0525E41215F34AA0053CA15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		E0525E56215F34AA0053CA15 /* FiveStarRatingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiveStarRatingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0525E5A215F34AA0053CA15 /* FiveStarRatingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveStarRatingUITests.swift; sourceTree = "<group>"; };
 		E0525E5C215F34AA0053CA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0525E6A215F357C0053CA15 /* FiveStarRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveStarRating.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,9 @@
 		E0525E36215F34A90053CA15 /* FiveStarRating */ = {
 			isa = PBXGroup;
 			children = (
+				E0525E69215F34C30053CA15 /* Extensions */,
+				E0525E68215F34B10053CA15 /* ViewControllers */,
 				E0525E37215F34A90053CA15 /* AppDelegate.swift */,
-				E0525E39215F34A90053CA15 /* ViewController.swift */,
 				E0525E3B215F34A90053CA15 /* Main.storyboard */,
 				E0525E41215F34AA0053CA15 /* Assets.xcassets */,
 				E0525E43215F34AA0053CA15 /* LaunchScreen.storyboard */,
@@ -126,6 +131,22 @@
 				E0525E5C215F34AA0053CA15 /* Info.plist */,
 			);
 			path = FiveStarRatingUITests;
+			sourceTree = "<group>";
+		};
+		E0525E68215F34B10053CA15 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0525E39215F34A90053CA15 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E0525E69215F34C30053CA15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0525E6A215F357C0053CA15 /* FiveStarRating.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +283,7 @@
 				E0525E3A215F34A90053CA15 /* ViewController.swift in Sources */,
 				E0525E40215F34A90053CA15 /* FiveStarRating.xcdatamodeld in Sources */,
 				E0525E38215F34A90053CA15 /* AppDelegate.swift in Sources */,
+				E0525E6B215F357C0053CA15 /* FiveStarRating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0525E50215F34AA0053CA15 /* FiveStarRatingTests.swift in Sources */,
+				E0525E6C215F357C0053CA15 /* FiveStarRating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0525E5B215F34AA0053CA15 /* FiveStarRatingUITests.swift in Sources */,
+				E0525E6D215F357C0053CA15 /* FiveStarRating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
